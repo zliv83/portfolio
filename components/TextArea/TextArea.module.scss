@@ -1,0 +1,25 @@
+@import '@/styles/__settings';
+
+.input {
+  border: none;
+  border-bottom: toRem(1) solid $white;
+  background-color: transparent;
+  resize: none;
+  color: $white;
+  width: 95%;
+  font-weight: 500;
+  font-size: toRem(16);
+  line-height: toRem(26);
+  padding: 0 0 toRem(17) toRem(24);
+
+  &:focus {
+    outline: none;
+  }
+
+  &::placeholder {
+    color: $white;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+}

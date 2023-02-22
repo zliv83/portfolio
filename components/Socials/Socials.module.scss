@@ -1,0 +1,7 @@
+@import '@/styles/__settings';
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: toRem(25.6);
+}

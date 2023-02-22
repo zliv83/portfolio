@@ -1,11 +1,11 @@
+/* eslint-disable camelcase */
 import Head from 'next/head';
-import { Montserrat } from '@next/font/google';
+import { Space_Grotesk } from '@next/font/google';
 
 import '@/styles/globals.scss';
 
-const mont = Montserrat({
+const mont = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 });
 
 export default function App({ Component, pageProps }) {

@@ -1,0 +1,64 @@
+@import '@/styles/__settings';
+
+.contact {
+  background: $dark-grey;
+  display: flex;
+  flex-direction: column;
+  @include center();
+  padding: toRem(60) toRem(16);
+
+  .title {
+    font-weight: 700;
+    font-size: toRem(40);
+    line-height: toRem(40);
+    letter-spacing: toRem(-1.13636);
+  }
+
+  .description {
+    margin-top: toRem(20);
+    text-align: center;
+    color: $grey;
+    font-weight: 500;
+    font-size: toRem(16);
+    line-height: toRem(26);
+  }
+
+  .textArea {
+    margin-top: toRem(50);
+    display: flex;
+    flex-direction: column;
+    gap: toRem(32);
+    width: 100%;
+  }
+
+  .underscoreText {
+    margin-top: toRem(32);
+    margin-right: toRem(18);
+    align-self: self-end;
+    cursor: pointer;
+  }
+
+  .underscore {
+    margin-top: toRem(87);
+    width: 100%;
+    border-top: toRem(1) solid $white;
+  }
+
+  .footer {
+    margin-top: toRem(39);
+    display: flex;
+    flex-direction: column;
+    gap: toRem(20);
+  }
+
+  .rings {
+    position: absolute;
+    background-image: url('../../../../public/pattern-rings.svg');
+    background-repeat: no-repeat;
+    height: toRem(129);
+    width: toRem(530);
+    top: toRem(4441);
+    left: toRem(-350);
+    opacity: 0.25;
+  }
+}

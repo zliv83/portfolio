@@ -1,0 +1,48 @@
+@import '@/styles/__settings';
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  @include center();
+  padding: toRem(20) toRem(16) toRem(80) toRem(16);
+
+  .socials {
+    margin-top: toRem(20);
+  }
+
+  .image {
+    position: absolute;
+    background-image: url('../../../../public/image-profile-mobile.webp');
+    top: 0;
+    left: toRem(101);
+    height: toRem(383);
+    width: toRem(174);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .rings {
+    position: absolute;
+    width: toRem(530);
+    height: toRem(129);
+    left: toRem(-342);
+    top: toRem(124);
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    background-image: url('../../../../public/pattern-rings.svg');
+    background-repeat: no-repeat;
+  }
+
+  .circle {
+    position: absolute;
+    background-image: url('../../../../public/pattern-circle.svg');
+    width: toRem(129);
+    height: toRem(129);
+    left: toRem(325);
+    top: toRem(254);
+  }
+
+  .intro {
+    margin-top: toRem(331);
+  }
+}

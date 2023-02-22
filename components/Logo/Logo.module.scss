@@ -1,0 +1,8 @@
+@import '@/styles/__settings';
+
+.logo {
+  font-weight: 700;
+  font-size: toRem(24);
+  line-height: toRem(32);
+  letter-spacing: toRem(-0.333333);
+}

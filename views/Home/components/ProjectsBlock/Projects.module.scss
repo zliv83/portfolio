@@ -1,0 +1,46 @@
+@import '@/styles/__settings';
+
+.projects {
+  padding: toRem(80) toRem(16);
+  display: flex;
+  flex-direction: column;
+  gap: toRem(40);
+
+  .titleContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      font-weight: 700;
+      font-size: toRem(40);
+      line-height: toRem(40);
+      letter-spacing: toRem(-1.13636);
+    }
+  }
+
+  .design {
+    background-image: url('../../../../public/design-mobile.webp');
+  }
+
+  .elearning {
+    background-image: url('../../../../public/eLearning-mobile.webp');
+  }
+
+  .todo {
+    background-image: url('../../../../public/todo-app-mobile.webp');
+  }
+
+  .entertainment {
+    background-image: url('../../../../public/entertainment-mobile.webp');
+  }
+
+  .memory {
+    background-image: url('../../../../public/memory-mobile.webp');
+  }
+
+  .art {
+    background-image: url('../../../../public/art-mobile.webp');
+  }
+}

@@ -1,0 +1,45 @@
+@import '@/styles/__settings';
+
+.project {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .image {
+    width: 100%;
+    height: toRem(253);
+    background-position: center;
+    background-size: cover;
+  }
+
+  .titleContainer {
+    margin-top: toRem(20);
+    display: flex;
+    flex-direction: column;
+    gap: toRem(7);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: toRem(24);
+    line-height: toRem(32);
+
+    .techContainer {
+      display: flex;
+      flex-direction: row;
+      gap: toRem(18);
+      font-weight: 500;
+      font-size: toRem(18);
+      line-height: toRem(28);
+    }
+  }
+
+  .view {
+    display: flex;
+    flex-direction: row;
+    gap: toRem(30);
+    margin-top: toRem(20);
+
+    @include desktop() {
+      display: none;
+    }
+  }
+}

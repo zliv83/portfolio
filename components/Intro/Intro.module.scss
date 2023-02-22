@@ -1,0 +1,36 @@
+@import '@/styles/__settings';
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  @include center();
+
+  .title {
+    position: relative;
+    font-weight: 700;
+    font-size: toRem(35);
+    line-height: toRem(40);
+    text-align: center;
+
+    .titleUnderscore {
+      position: absolute;
+      width: toRem(268);
+      height: toRem(4);
+      background: $green;
+      left: toRem(58);
+    }
+  }
+
+  .description {
+    margin-top: toRem(20);
+    color: $grey;
+    text-align: center;
+    font-weight: 500;
+    font-size: toRem(16);
+    line-height: toRem(26);
+  }
+
+  .underScoreText {
+    margin-top: toRem(24);
+  }
+}
