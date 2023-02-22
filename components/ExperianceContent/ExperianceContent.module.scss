@@ -6,11 +6,22 @@
   gap: toRem(1);
   @include center();
 
+  @include tablet() {
+    align-items: flex-start;
+    gap: toRem(14);
+  }
+
   .title {
     font-weight: 700;
     font-size: toRem(32);
     line-height: toRem(40);
     letter-spacing: toRem(-1);
+
+    @include tablet() {
+      font-size: toRem(48);
+      line-height: toRem(56);
+      letter-spacing: toRem(-1.5);
+    }
   }
 
   .years {
@@ -18,5 +29,10 @@
     font-size: toRem(16);
     line-height: toRem(26);
     color: $grey;
+
+    @include tablet() {
+      font-size: toRem(18);
+      line-height: toRem(28);
+    }
   }
 }

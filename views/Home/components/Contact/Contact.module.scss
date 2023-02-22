@@ -7,11 +7,20 @@
   @include center();
   padding: toRem(60) toRem(16);
 
+  @include tablet() {
+    padding: toRem(60) toRem(30) toRem(40) toRem(30);
+  }
+
   .title {
     font-weight: 700;
     font-size: toRem(40);
     line-height: toRem(40);
     letter-spacing: toRem(-1.13636);
+
+    @include tablet() {
+      font-size: toRem(72);
+      line-height: toRem(72);
+    }
   }
 
   .description {
@@ -21,6 +30,12 @@
     font-weight: 500;
     font-size: toRem(16);
     line-height: toRem(26);
+
+    @include tablet() {
+      font-size: toRem(18);
+      line-height: toRem(28);
+      width: toRem(445);
+    }
   }
 
   .textArea {
@@ -29,6 +44,11 @@
     flex-direction: column;
     gap: toRem(32);
     width: 100%;
+
+    @include tablet() {
+      margin-top: toRem(48);
+      width: toRem(445);
+    }
   }
 
   .underscoreText {
@@ -36,6 +56,10 @@
     margin-right: toRem(18);
     align-self: self-end;
     cursor: pointer;
+
+    @include tablet() {
+      margin-right: toRem(150);
+    }
   }
 
   .underscore {
@@ -49,6 +73,13 @@
     display: flex;
     flex-direction: column;
     gap: toRem(20);
+
+    @include tablet() {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
   }
 
   .rings {
@@ -60,5 +91,9 @@
     top: toRem(4441);
     left: toRem(-350);
     opacity: 0.25;
+
+    @include tablet() {
+      top: toRem(3150);
+    }
   }
 }

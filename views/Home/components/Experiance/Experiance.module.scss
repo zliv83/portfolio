@@ -5,6 +5,11 @@
   @include center();
   flex-direction: column;
 
+  @include tablet() {
+    align-items: flex-start;
+    padding-left: toRem(32);
+  }
+
   .borderTop {
     border-top: 1px solid $grey;
     width: 95%;
@@ -12,14 +17,24 @@
 
   .content {
     padding: toRem(40) 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: toRem(24);
+
+    @include tablet() {
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: toRem(52);
+      column-gap: toRem(100);
+    }
   }
 
   .borderBottom {
     border-bottom: 1px solid $grey;
     width: 95%;
+
+    @include tablet() {
+      display: none;
+    }
 
     @include desktop() {
       display: none;
@@ -34,5 +49,10 @@
     top: toRem(1094);
     left: toRem(189);
     opacity: 0.25;
+
+    @include tablet() {
+      top: toRem(880);
+      left: toRem(550);
+    }
   }
 }

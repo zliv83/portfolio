@@ -6,8 +6,23 @@
   @include center();
   padding: toRem(20) toRem(16) toRem(80) toRem(16);
 
-  .socials {
-    margin-top: toRem(20);
+  @include tablet() {
+    align-items: flex-start;
+    padding: toRem(29) toRem(29.51) toRem(60) toRem(32);
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: toRem(20);
+    align-items: center;
+    z-index: 2;
+
+    @include tablet() {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+    }
   }
 
   .image {
@@ -19,6 +34,14 @@
     width: toRem(174);
     background-size: cover;
     background-repeat: no-repeat;
+
+    @include tablet() {
+      background-image: url('../../../../public/image-profile-tablet.webp');
+      height: toRem(600);
+      width: toRem(322);
+      left: auto;
+      right: 0;
+    }
   }
 
   .rings {
@@ -40,9 +63,18 @@
     height: toRem(129);
     left: toRem(325);
     top: toRem(254);
+
+    @include tablet() {
+      left: toRem(705);
+      top: toRem(470);
+    }
   }
 
   .intro {
     margin-top: toRem(331);
+
+    @include tablet() {
+      margin-top: toRem(90);
+    }
   }
 }

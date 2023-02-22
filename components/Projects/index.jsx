@@ -9,7 +9,7 @@ export default function Projects({ title, tech, className }) {
     <div className={styles.project}>
       <div className={`${styles.image} ${className}`} />
       <div className={styles.titleContainer}>
-        <div className={styles.title}>{title}</div>
+        {title}
         <div className={styles.techContainer}>{techStack}</div>
       </div>
       <div className={styles.view}>

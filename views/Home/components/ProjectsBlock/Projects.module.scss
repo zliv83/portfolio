@@ -6,6 +6,10 @@
   flex-direction: column;
   gap: toRem(40);
 
+  @include tablet() {
+    padding: toRem(80) toRem(30);
+  }
+
   .titleContainer {
     display: flex;
     flex-direction: row;
@@ -17,6 +21,23 @@
       font-size: toRem(40);
       line-height: toRem(40);
       letter-spacing: toRem(-1.13636);
+
+      @include tablet() {
+        font-size: toRem(72);
+        line-height: toRem(72);
+        letter-spacing: toRem(-2.04545);
+      }
+    }
+  }
+
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: toRem(24);
+
+    @include tablet() {
+      grid-template-columns: repeat(2, 1fr);
+      gap: toRem(60);
     }
   }
 

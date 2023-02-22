@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import UnderScoreText from '../UnderScoreText';
 import styles from './Intro.module.scss';
 
@@ -5,9 +6,9 @@ export default function Intro({ className }) {
   return (
     <div className={`${styles.intro} ${className}`}>
       <span className={styles.title}>
-        Nice to meet you!
-        <br />
-        I&apos;m Zach Livingston.
+        Nice to <br className={styles.break} /> meet you!&nbsp;
+        <br className={styles.breakMobile} />
+        I&apos;m <br className={styles.break} /> Zach Livingston.
         <div className={styles.titleUnderscore} />
       </span>
       <span className={styles.description}>

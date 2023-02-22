@@ -58,7 +58,7 @@ export default function ProjectsBlock() {
         <span className={styles.title}>Projects</span>
         <UnderScoreText title="contact me" />
       </div>
-      {projects}
+      <div className={styles.projectsContainer}>{projects}</div>
     </div>
   );
 }
